@@ -1,0 +1,263 @@
+.main-nav_header {
+  @include max-w($screen-md) {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 5;
+    display: none;
+  }
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav__wrapp {
+  @include max-w($screen-md) {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    top: 0;
+    left: 0;
+    position: relative;
+    align-items: center;
+    overflow-y: scroll;
+  }
+}
+.main-nav__list {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @include max-w($screen-md) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+  }
+}
+.main-nav__li {
+  margin-right: 40px;
+  position: relative;
+  padding: 5px 0;
+
+  &:last-child {
+    margin-right: 0;
+
+    @include max-w($screen-md) {
+      margin: 10px auto;
+    }
+  }
+
+  @include max-w($screen-md) {
+    margin: 10px auto;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.main-nav__link {
+  font-size: 16px;
+  font-weight: 400;
+  color: $white;
+
+  @include max-w($screen-md) {
+    padding: 10px;
+  }
+
+  &:hover {
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+  }
+}
+
+//mobile menu icon
+.menu-action {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  z-index: 6;
+  display: none;
+  overflow: hidden;
+
+  &_init {
+    position: fixed;
+    right: 30px;
+    top: 40px;
+  }
+
+  @include max-w($screen-md) {
+    display: block;
+  }
+}
+.menu-action__item {
+  display: block;
+  width: 30px;
+  height: 1px;
+  left: 50%;
+  top: 50%;
+  background-color: $white;
+  position: absolute;
+  transition: 0.4s;
+  transform: translate(-50%, -50%);
+
+  &:first-child {
+    top: 1px;
+  }
+  &:last-child {
+    top: auto;
+    bottom: 0;
+  }
+}
+
+//mobile classes
+.slide {
+  display: none;
+  align-items: center;
+  opacity: 1;
+  animation: menu 1s linear;
+}
+.disabled-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+.menu-action_init .menu-action__item {
+  background-color: #30e7fd;
+
+  &:first-child {
+    transform: rotate(-45deg) translate(-50%, -50%);
+  }
+  &:nth-child(2n) {
+    opacity: 0;
+  }
+  &:last-child {
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
+}
+.rotateEl {
+  transform: rotate(180deg);
+}
+
+//walker classes
+.dropper-nav {
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: $white;
+  margin-left: 2px;
+  cursor: pointer;
+
+  @include max-w(767px) {
+    margin-right: -22px;
+  }
+}
+.dropdown-content {
+  width: 190px;
+  background: url("../images/common/dropp-menu.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  position: absolute;
+  top: 30px;
+  color: $black;
+  padding: 20px 0 20px 20px;
+  display: none;
+
+  li {
+    padding: 10px 0;
+
+    a {
+      color: $black;
+    }
+  }
+
+  @include max-w(767px) {
+    text-align: center;
+    background: none;
+    color: $white;
+    position: relative;
+    left: inherit;
+    bottom: inherit;
+    top: inherit;
+    padding: 10px 0 0;
+
+    li a {
+      color: $white;
+    }
+  }
+}
+
+.menu-item-has-children:hover {
+
+  @include min-w(768px) {
+    .dropdown-content {
+      display: block;
+    }
+  }
+}
+
+.dropdown-content .dropped-link {
+  padding-left: 40px;
+  position: relative;
+  margin-right: 0;
+  min-height: 30px;
+
+  @include max-w(767px) {
+    padding: 0;
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+
+    @include max-w(767px) {
+      display: none;
+    }
+  }
+  
+  &_vision {
+    &:before {
+      background: url("../images/icons/icon-4.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &_tech {
+    &:before {
+      background: url("../images/icons/icon-5.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &_team {
+    &:before {
+      background: url("../images/icons/icon-6.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &_developers {
+    &:before {
+      background: url("../images/icons/icon-7.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &_players {
+    &:before {
+      background: url("../images/icons/icon-8.png") no-repeat;
+      background-size: cover;
+    }
+  }
+}

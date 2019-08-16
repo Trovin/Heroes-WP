@@ -1,0 +1,90 @@
+.team-cart {
+  width: 100%;
+  min-height: 305px;
+  background-color: $white;
+  position: relative;
+  padding: 70px 38px 20px;
+  margin-bottom: 60px;
+  -webkit-box-shadow: 1px 11px 33px -4px rgba(179,179,179,1);
+  -moz-box-shadow: 1px 11px 33px -4px rgba(179,179,179,1);
+  box-shadow: 1px 11px 33px -4px rgba(179,179,179,1);
+  transition: 0.4s;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #385d8a;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 47px -8px rgba(128,128,128,1);
+    -moz-box-shadow: 0px 0px 47px -8px rgba(128,128,128,1);
+    box-shadow: 0px 0px 47px -8px rgba(128,128,128,1);
+
+    &:after {
+      width: 100%;
+    }
+  }
+
+  @include max-w($screen-lg) {
+    width: 550px;
+    max-width: 100%;
+    min-height: 200px;
+    text-align: center;
+    margin: 0 auto 100px;
+  }
+  @include max-w($screen-sm) {
+    padding: 60px 10px 20px;
+    margin-bottom: 70px;
+  }
+}
+
+.team-cart__info {
+  font-size: 16px;
+  line-height: 30px;
+  color: $info;
+  font-family: $asap;
+
+  * {
+    font-size: 16px;
+    line-height: 30px;
+    color: $info;
+    font-family: $asap;
+  }
+}
+.team-cart__label {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -60px;
+  left: calc(50% - 60px);
+  position: absolute;
+  background: url("../images/layers/section-team/team-label.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include max-w($screen-sm) {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: calc(50% - 40px);
+  }
+
+  &-image {
+    max-width: 100px;
+    max-height: 100px;
+
+    @include max-w($screen-sm) {
+      width: 30px;
+    }
+  }
+}

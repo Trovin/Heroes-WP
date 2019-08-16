@@ -1,0 +1,42 @@
+//  Импорт файлов
+
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+@import 'base';
+@import 'typography';
+@import 'sprite';
+
+@import 'wp-classes';
+
+@import 'elements/form-elements';
+@import 'elements/buttons';
+@import 'elements/section-headling';
+
+@import 'block/header';
+@import 'block/footer';
+@import 'block/main-nav';
+@import 'block/wingsman';
+@import 'block/empowers';
+@import 'block/team-cart';
+@import 'block/introduce';
+@import 'block/service-cart';
+@import 'block/potential';
+@import 'block/learning';
+@import 'block/subscribe-form';
+
+@import 'pages/home';
+@import 'pages/involved';
+@import 'pages/developers';
+@import 'pages/vision';
+@import 'pages/tech';
+@import 'pages/gamers';
+@import 'pages/wingsman';
+@import 'pages/contact';
+@import 'pages/team';
+@import 'pages/policy';
+@import 'pages/demo';
+@import 'pages/blog';
+@import 'pages/404';
+
+@import 'pages/common';

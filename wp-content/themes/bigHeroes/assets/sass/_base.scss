@@ -1,0 +1,100 @@
+//  Базовые стили
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*, body, html {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+body {
+	background-color: $body-bg;
+  color: $text-color;
+	font-family: $ubuntu;
+  font-weight: $font-weight;
+	font-size: $font-size;
+	line-height: $line-height;
+  overflow-x: hidden;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.site-main {
+  min-height: 60vh;
+}
+.wrapper {
+  max-width: 1310px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+section {
+  width: 100%;
+  position: relative;
+}
+
+iframe {
+  max-width: 100% !important;
+  margin: 0 auto !important;
+
+  @include max-w($screen-sm) {
+    height: 250px;
+  }
+
+  @include max-w($mobile-ex-sm) {
+    height: 180px;
+  }
+}
+
+.container {
+  position: relative;
+  width: 1140px !important;
+  max-width: 100% !important;
+}
+
+.white {
+  color: $white;
+  font-size: 16px;
+
+  @include max-w($screen-md) {
+    margin-top: 30px;
+  }
+}
+.page-container {
+  max-width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.section-content {
+  padding: 60px 0 200px;
+}

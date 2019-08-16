@@ -1,0 +1,89 @@
+.section-potential {
+  width: 100%;
+  background-color: #19375d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: $white;
+  position: relative;
+
+  @include max-w($screen-md) {
+    background-size: contain;
+  }
+
+  .container {
+    min-height: 450px;
+    padding: 120px 15px;
+    position: relative;
+
+    @include  max-w($screen-md) {
+      padding: 200px 0 60px;
+    }
+  }
+}
+.potential-image {
+  position: absolute;
+
+  &_left {
+    width: 305px;
+    max-height: 600px;
+    top: -85px;
+    left: -90px;
+
+    @include  max-w(1400px) {
+      width: 220px;
+      left: 0;
+    }
+    @include  max-w($screen-xl) {
+      width: auto;
+      height: 200px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    @include  max-w($screen-md) {
+      top: -40px;
+    }
+  }
+
+  &_right {
+    width: 310px;
+    max-height: 600px;
+    top: -115px;
+    right: -55px;
+
+    @include  max-w(1400px) {
+      width: 220px;
+      right: 0;
+    }
+    @include  max-w($screen-xl) {
+      display: none;
+    }
+  }
+}
+.potential-inner {
+  width: 775px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  @include max-w($screen-md) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.potential-info {
+  max-width: 630px;
+  margin: 0 auto 40px;
+}
+.potential-info , .potential-sub_info {
+  font-size: 18px;
+  font-family: $asap;
+  line-height: 36px;
+
+  @include max-w($screen-md) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

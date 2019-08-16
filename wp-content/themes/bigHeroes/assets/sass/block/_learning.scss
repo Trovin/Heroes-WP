@@ -1,0 +1,70 @@
+/* learning section */
+.section-learning {
+  width: 100%;
+  background-color: #19375d;
+  color: $white;
+
+  .container {
+    min-height: 490px;
+    padding-top: 140px;
+    padding-bottom: 40px;
+
+    @include max-w($screen-xl) {
+      min-height: inherit;
+      padding: 60px 15px 120px;
+    }
+
+    @include max-w($screen-lg) {
+      padding: 60px 15px;
+    }
+  }
+}
+.learning-info {
+  width: 600px;
+  max-width: 100%;
+
+  @include max-w($screen-lg) {
+    width: 100%;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  * {
+    font-size: 18px;
+    font-family: $asap;
+    line-height: 36px;
+    margin-bottom: 45px;
+  }
+  p {
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom:0;
+    }
+
+    @include max-w($screen-md) {
+      font-size: 16px;
+    }
+  }
+  strong {
+    font-size: 22px;
+    font-family: $ubuntu_bold;
+
+    @include max-w($screen-md) {
+      font-size: 18px;
+    }
+  }
+}
+.learning-image {
+  width: 430px;
+  position: absolute;
+  right: 0;
+  top: -55px;
+
+  @include max-w($screen-xl) {
+    width: 360px;
+  }
+  @include max-w($screen-lg) {
+    display: none;
+  }
+}

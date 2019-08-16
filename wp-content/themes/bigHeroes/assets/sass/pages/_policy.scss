@@ -1,0 +1,23 @@
+.section-policy {
+  width: 100%;
+  padding: 50px 0 50px;
+  font-size: 18px;
+  font-family: $asap;
+  line-height: 26px;
+  margin-bottom: 35px;
+
+  * {
+    font-size: 18px;
+    font-family: $asap;
+    line-height: 26px;
+    margin-bottom: 35px;
+  }
+
+  a {
+    transition: 0.2s;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+}

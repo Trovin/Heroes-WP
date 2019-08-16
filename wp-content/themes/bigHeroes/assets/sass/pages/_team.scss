@@ -1,0 +1,111 @@
+.container_team {
+  width: 1140px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 95px 15px 0;
+  text-align: center;
+  flex-direction: row;
+  overflow: hidden;
+
+  @include max-w($mobile-sm) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.teammate-cart {
+  @include max-w($screen-lg) {
+    flex-shrink: 0;
+    flex-basis: 20%;
+  }
+
+  @include max-w($mobile-sm) {
+    flex-basis: 33.33333%;
+  }
+}
+.teammate-name_header, .teammate-position_header {
+  @include max-w($screen-lg) {
+    display: none;
+  }
+}
+
+.teammate-image {
+  max-width: 200px;
+  height: 310px;
+  margin-bottom: 45px;
+  opacity: 0.6;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @include max-w(1100px) {
+    height: 210px;
+  }
+
+  @include max-w($screen-lg) {
+    height: 100px;
+  }
+}
+.teammate-name {
+  color: #18365a;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.teammate-position {
+  font-size: 16px;
+  color: #18365a;
+  font-family: $asap;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.teammate-info {
+  display: none;
+}
+.container_team-info {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 15px 0;
+  padding-bottom: 250px;
+}
+.teammate-photo {
+  width: 145px;
+  height: 145px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.teammate_close-icon {
+  background-color: transparent;
+  color: #999999;
+  cursor: pointer;
+  font-size: 26px;
+  position: absolute;
+  right: -40px;
+  top: 0;
+}
+.teammate__info-text {
+  font-size: 18px;
+  line-height: 36px;
+  font-family: $asap;
+  color: #666666;
+
+  @include max-w($screen-md) {
+    font-size: 16px;
+  }
+}
+
+.active-tab {
+  opacity: 1;
+}

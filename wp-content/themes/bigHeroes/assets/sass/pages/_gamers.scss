@@ -1,0 +1,30 @@
+/* modification section */
+.gamers-empowers .empowers {
+  padding: 100px 0 60px;
+}
+
+.gamers-learning {
+  .section-learning .container {
+    padding: 65px 15px;
+  }
+
+  .learning-info {
+    width: 560px;
+    max-width: 100%;
+
+    @include max-w($screen-lg) {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .learning-image {
+    width: 520px;
+    top: -85px;
+
+    @include max-w($screen-xl) {
+      width: 420px;
+    }
+  }
+}
+

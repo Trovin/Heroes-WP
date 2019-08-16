@@ -1,0 +1,53 @@
+/* modification section */
+.vision-empowers .empowers-inner {
+  width: 760px;
+  max-width: 100%;
+}
+
+.vision-empowers .empowers {
+  padding: 75px 0 90px;
+}
+
+.vision-potential {
+  .section-potential .container {
+    padding: 80px 15px;
+
+    @include max-w($screen-xl) {
+      padding: 140px 15px 80px 15px;
+    }
+  }
+
+  .potential-sub_info p {
+    font-size: 18px;
+    line-height: 36px;
+
+    @include max-w($screen-md) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  .potential-image_left {
+    width: 245px;
+    top: -85px;
+    left: 0;
+
+    @include max-w($screen-xl) {
+      width: auto;
+      left: 50%;
+    }
+  }
+
+  .potential-image_right {
+    width: 280px;
+    top: -95px;
+    right: 0;
+  }
+}
+
+.vision-decor .section-decor {
+  height: 290px;
+
+  @include max-w($screen-xl) {
+    height: 200px;
+  }
+}

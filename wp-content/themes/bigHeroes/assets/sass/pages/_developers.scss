@@ -1,0 +1,25 @@
+/* modification section */
+.developers-empowers {
+  .empowers {
+    width: 1000px;
+    max-width: 100%;
+    padding: 75px 0 65px;
+
+    @include  max-w($screen-md) {
+      padding: 60px 0 80px;
+    }
+
+    .empowers-inner {
+      width: 800px;
+      max-width: 100%;
+    }
+    p {
+      margin-bottom: 35px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+

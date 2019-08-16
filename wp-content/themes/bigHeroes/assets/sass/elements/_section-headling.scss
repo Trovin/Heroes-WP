@@ -1,0 +1,36 @@
+.section-headling {
+  color: $headling;
+  text-align: inherit;
+
+  &_empowers {
+    max-width: 370px;
+    margin: 0 auto 10px;
+    text-align: center;
+  }
+
+  &_team {
+    margin-bottom: 115px;
+    text-align: center;
+
+    @include max-w($mobile-ex-sm) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &_gaming {
+    color: $white;
+    margin-bottom: 10px;
+
+    @include max-w($screen-sm) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &_footer {
+    margin-bottom: 10px;
+  }
+
+  @include max-w($screen-sm) {
+    font-size: 28px;
+  }
+}

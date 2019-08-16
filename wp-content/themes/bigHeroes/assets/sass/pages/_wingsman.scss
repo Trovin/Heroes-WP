@@ -1,0 +1,39 @@
+/* modification section */
+.wingsman-empowers {
+  .empowers {
+    padding: 70px 0;
+  }
+  .empowers-inner {
+    width: 670px;
+    max-width: 100%;
+  }
+  .empowers-info p {
+    margin-bottom: 35px;
+  }
+}
+
+
+.wingsman-learning .learning-image {
+  width: 470px;
+  top: -15px;
+
+  @include max-w(1200px) {
+    width: 400px;
+  }
+}
+
+
+.wingsman-service {
+  .service-cart {
+    min-height: 410px;
+    padding: 45px 30px 45px;
+  }
+
+  .service-headling {
+    margin-bottom: 10px;
+  }
+
+  .service-info {
+    min-height: 150px;
+  }
+}

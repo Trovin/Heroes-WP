@@ -1,0 +1,49 @@
+//  Colors
+$body-bg: #fff;
+$text-color: #020f21;
+
+//  Default colors
+$white: #fff;
+$black: #000;
+
+//  Site colors
+$info: #00162b;
+$theme: #e7edf4;
+$btn: #b71d1d;
+
+$headling: #18365a;
+$footer: #011226;
+
+
+// Link colors
+$link-color: #fff;
+$link-color--hover: #a9f6ff;
+
+
+//  Типографика
+$asap: 'Asap', 'Helvetica', 'Arial', 'sans-serif';
+$asap_italic: 'AsapItalic', 'Helvetica', 'Arial', 'sans-serif';
+
+$ubuntu: 'Ubuntu', 'Helvetica', 'Arial', 'sans-serif';
+$ubuntu_light: 'UbuntuLight', 'Helvetica', 'Arial', 'sans-serif';
+$ubuntu_medium: 'UbuntuMedium', 'Helvetica', 'Arial', 'sans-serif';
+$ubuntu_bold: 'UbuntuBold', 'Helvetica', 'Arial', 'sans-serif';
+
+$font-size: 18px;
+$font-weight: 400; // Regular
+$line-height: 1.2;
+
+
+// Ширина контейнера
+$container-padding: 15px;
+$container-width: 1140px + $container-padding * 2;
+
+
+//  Адаптивность и соответствующие ширины контейнера
+$mobile-ex-sm: 420px;
+$mobile-sm: 480px;
+$screen-sm: 520px;
+$mobile-lg: 736px;
+$screen-md: 767px;
+$screen-lg: 992px;
+$screen-xl: 1200px;

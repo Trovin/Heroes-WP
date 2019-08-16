@@ -1,0 +1,118 @@
+.section-subscribe {
+  width: 100%;
+  background-color: #e7edf4;
+  padding: 40px 10px;
+
+  p {
+    color: #000;
+    font-family: $asap;
+
+    @include max-w($screen-md) {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+  }
+
+  @include max-w($screen-lg) {
+    text-align: center;
+  }
+  @include max-w(520px) {
+    padding: 20px 0;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+  }
+}
+
+.subscribe-form .wpcf7-form {
+  width: 100%;
+}
+
+.subscribe-form {
+  color: $white;
+
+  .wpcf7 {
+    display: flex;
+    justify-content: space-between;
+
+    form {
+      @include max-w($screen-lg) {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      @include max-w($screen-md) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  span.wpcf7-not-valid-tip {
+    display: none;
+  }
+}
+
+div.wpcf7-response-output {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+  color: #9ede84;
+}
+.subscribe-input {
+  width: 445px;
+  max-width: 100%;
+  font-size: 16px !important;
+  font-family: $asap;
+  padding: 16px 10px;
+  margin-right: 25px;
+
+  @include max-w($screen-md) {
+    margin: 5px auto;
+  }
+}
+.btn-subscribe {
+  margin: 0;
+  padding: 15px 60px;
+  background: url(../images/common/btn/btn-texture.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &:hover {
+    box-shadow: 1px 11px 33px -4px #b3b3b3;
+  }
+
+  @include max-w($screen-md) {
+    margin: 5px auto;
+  }
+}
+
+.subscribe-form__headling {
+  font-size: 36px;
+  line-height: 36px;
+  font-family: $ubuntu_light;
+  margin-bottom: 5px;
+}
+.subscribe-form__info {
+  font-family: $asap;
+  font-size: 18px;
+  line-height: 36px;
+  margin-bottom: 20px;
+
+  @include max-w($screen-md) {
+    line-height: 30px;
+  }
+}
+.form__info {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.mc4wp-response *, .mc4wp-response p {
+  font-size: 12px;
+  color: #36ad14;
+}

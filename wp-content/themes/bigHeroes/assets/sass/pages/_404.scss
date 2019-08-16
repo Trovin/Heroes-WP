@@ -1,0 +1,22 @@
+.error-404 {
+  width: 1140px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+
+  h1 {
+    font-size: 42px;
+    color: $headling;
+  }
+  .home-link {
+    font-size: 38px;
+    color: $headling;
+    transition: 0.2s;
+    font-family: $ubuntu_bold;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+}

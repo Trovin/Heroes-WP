@@ -1,0 +1,55 @@
+.section-introduce {
+  width: 100%;
+  position: relative;
+  min-height: 590px;
+  overflow: hidden;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  color: $white;
+  text-align: center;
+
+  &_single {
+    margin-bottom: 40px;
+  }
+
+  @include max-w(1400px) {
+    padding-top: 140px;
+    min-height: 200px;
+  }
+}
+.introduce-bac {
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  top: 0;
+  left: -10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  overflow: hidden;
+
+  @include max-w($screen-md) {
+    width: 140%;
+    left: -20%;
+  }
+}
+.introduce-bac__layer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(19, 18, 59, 0.5);
+}
+
+.introduce-headling {
+  text-shadow: 2px 4px 120px rgba(1, 33, 115, 1);
+  padding: 0 10px;
+}
+.introduce-info {
+  text-shadow: 2px 4px 80px rgba(1, 33, 115, 1);
+  padding: 0 10px;
+}

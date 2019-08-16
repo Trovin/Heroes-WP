@@ -1,0 +1,213 @@
+.decor-text {
+  font-family: UbuntuLight,Helvetica,Arial,sans-serif;
+  font-size: 22px;
+
+  @include max-w($screen-md) {
+    font-size: 18px;
+  }
+}
+
+.default-page {
+  padding: 40px 0 180px;
+  color: $black;
+  min-height: 60vh;
+
+  @include max-w(580px) {
+    padding: 40px 0 320px;
+  }
+
+  @include max-w(500px) {
+    padding: 40px 0 240px;
+  }
+}
+
+.single_intro {
+  color: $white;
+
+  h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: $white;
+
+    @include max-w(1400px) {
+      font-size: 36px;
+    }
+
+    @include max-w(768px) {
+      font-size: 32px;
+    }
+
+    @include max-w(520px) {
+      font-size: 26px;
+    }
+  }
+}
+.entry-single {
+  width: 760px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 200px;
+  overflow: hidden;
+
+  * {
+    color: #020f21;
+    font-size: 16px;
+    line-height: 140%;
+    font-family: $asap !important;
+  }
+
+  ul {
+    font-family: monospace;
+    list-style: none;
+    padding: 0 0 0 5px;
+
+    li {
+      margin: 0;
+      padding-left: 1.5em;
+      position: relative;
+      font-size: 16px;
+
+      &:after {
+        content: '';
+        height: .4em;
+        width: .4em;
+        background: #020f21;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: rotate(45deg) translateY(-50%);
+      }
+
+    }
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  p, span, strong, pre, table, tr, td, ul, ol {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    font-family: $asap;
+  }
+
+  h1 {
+    font-size: 42px;
+    color: $headling;
+    margin-bottom: 20px;
+
+    @include max-w(1400px) {
+      font-size: 36px;
+    }
+
+    @include max-w(768px) {
+      font-size: 32px;
+    }
+
+
+    @include max-w(520px) {
+      font-size: 26px;
+    }
+  }
+  h2 {
+    font-size: 24px;
+    color: $headling;
+    margin-bottom: 20px;
+  }
+  h3, h4 {
+    font-size: 20px;
+    color: $headling;
+    margin-bottom: 20px;
+  }
+  h5 {
+    font-size: 18px;
+    color: $headling;
+    margin-bottom: 20px;
+  }
+  h6 {
+    font-size: 16px;
+    color: $headling;
+    margin-bottom: 20px;
+  }
+
+  blockquote {
+    padding-left: 30px;
+    position: relative;
+    font-size: 17px;
+    line-height: 30px;
+    font-family: $asap_italic;
+
+    * {
+      font-size: 17px;
+      line-height: 30px;
+      font-family: $asap_italic !important;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 100%;
+      background-color: #020f21;
+      position: absolute;
+      left: 10px;
+      top: 0;
+    }
+  }
+
+  .aligncenter {
+
+    @include max-w(580px) {
+      width: 100%;
+    }
+  }
+
+  .alignleft, .alignright {
+    max-width: 50%;
+
+    @include max-w(580px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.post-date {
+  color: #999999;
+  margin: 0 0 25px;
+  font-size: 14px;
+}
+
+.red {
+  color: red;
+}
+
+.single_intro {
+  width: 100%;
+}
+.single-bac {
+  width: 100%;
+  min-height: 560px;
+  background: url("../images/common/single-page/background-image.png") no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 65px;
+
+  @include max-w(1400px) {
+    padding-top: 140px;
+    min-height: 200px;
+  }
+
+  @include max-w(520px) {
+    min-height: inherit;
+  }
+}

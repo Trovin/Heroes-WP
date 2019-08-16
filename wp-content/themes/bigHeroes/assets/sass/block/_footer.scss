@@ -1,0 +1,117 @@
+.footer{
+	width: 100%;
+  padding: 140px 0 40px;
+	position: relative;
+  background-color: $footer;
+
+  @include max-w($screen-xl) {
+    padding: 160px 0 40px;
+  }
+  @include max-w(385px) {
+    padding-top: 200px;
+  }
+
+  &_demo {
+    padding: 40px 0;
+  }
+}
+
+.main-nav_footer {
+
+  @include max-w($screen-md) {
+    display: none;
+  }
+}
+
+div.wpcf7-response-output {
+  font-size: 12px;
+}
+.footer-info {
+  width: calc(100% - 30px);
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #e7edf4;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: -240px;
+  -webkit-box-shadow: 0px 8px 38px -16px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 8px 38px -16px rgba(0,0,0,0.75);
+  box-shadow: 0px 8px 38px -16px rgba(0,0,0,0.75);
+
+  @include max-w($screen-xl) {
+    top: -260px;
+  }
+  @include max-w($mobile-lg) {
+    flex-direction: column;
+    text-align: center;
+  }
+  @include max-w($mobile-lg) {
+    flex-direction: column;
+    text-align: center;
+  }
+  @include max-w(712px) {
+    top: -320px;
+  }
+  @include max-w(480) {
+    top: -340px;
+  }
+
+  &__left-part {
+    padding-right: 30px;
+
+    @include max-w($screen-sm) {
+      font-size: 16px;
+    }
+    @include max-w($mobile-lg) {
+      padding: 0;
+    }
+  }
+  &__left-part  p {
+    font-size: 18px;
+    line-height: 30px;
+    color: $black;
+    font-family: $asap;
+
+    @include max-w($screen-sm) {
+      font-size: 16px;
+    }
+  }
+  &__right-part {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 320px;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include max-w($screen-xl) {
+      flex-basis: inherit;
+      justify-content: center;
+      padding: 20px 0 10px;
+    }
+  }
+}
+
+.footer-info_text {
+  max-width: 630px;
+}
+.footer-info_text {
+  color: $white;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  @include max-w($screen-md) {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.footer-nav__list {
+  display: flex;
+  justify-content: space-between;
+}

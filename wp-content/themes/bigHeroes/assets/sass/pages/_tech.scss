@@ -1,0 +1,15 @@
+/* modification section */
+.tech-empowers .empowers {
+  padding: 85px 0 60px;
+}
+
+
+.tech-learning .section-learning .learning-image {
+  width: 520px;
+  top: -65px;
+
+  @include max-w($screen-xl) {
+    width: 380px;
+  }
+}
+
