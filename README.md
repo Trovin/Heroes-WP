@@ -18,4 +18,11 @@
 
 префикс для таблиц: `wp_`  
 
-DOMAIN NAME bigheroes.test
+==============================
+DOMAIN NAME wingman.test
+
+wp-admin
+
+m_admin
+
+mHGglJI$fNgvZn2^ckPFLZ1F
